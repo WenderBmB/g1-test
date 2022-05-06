@@ -1,4 +1,3 @@
-import { red } from '@material-ui/core/colors';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import G1Icon from '.';
 
