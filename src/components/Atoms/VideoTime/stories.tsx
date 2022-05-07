@@ -8,6 +8,6 @@ export default {
 
 export const Default: Story = (args) => (
   <div style={{ backgroundColor: '#000', maxWidth: '50px', margin: '0 auto' }}>
-    <VideoTime />
+    <VideoTime text="Exemplo de texto" {...args} />
   </div>
 );

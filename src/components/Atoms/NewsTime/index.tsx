@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from './styles';
 
-interface ILabel {
+interface INewsTime {
   text: string;
 }
 
-const Label: React.FC<ILabel> = ({ text }) => {
+const NewsTime: React.FC<INewsTime> = ({ text }) => {
   return <Container>{text}</Container>;
 };
 
-export default Label;
+export default NewsTime;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from './styles';
 
-interface ILabel {
+interface INewsGroup {
   text: string;
 }
 
-const Label: React.FC<ILabel> = ({ text }) => {
+const NewsGroup: React.FC<INewsGroup> = ({ text }) => {
   return <Container>{text}</Container>;
 };
 
-export default Label;
+export default NewsGroup;

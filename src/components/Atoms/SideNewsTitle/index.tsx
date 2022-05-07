@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from './styles';
 
-interface ILabel {
+interface ISideNewsTitle {
   text: string;
 }
 
-const Label: React.FC<ILabel> = ({ text }) => {
+const SideNewsTitle: React.FC<ISideNewsTitle> = ({ text }) => {
   return <Container>{text}</Container>;
 };
 
-export default Label;
+export default SideNewsTitle;
