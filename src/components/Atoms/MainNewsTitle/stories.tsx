@@ -7,7 +7,7 @@ export default {
 } as Meta;
 
 export const Default: Story = (args) => (
-  <div style={{ background: '#000', maxWidth: '100%', margin: '0 auto' }}>
-    <MainNewsTitle text="Exemplo de texto" haveImg={false} {...args} />
+  <div style={{ fontFamily: 'Open Sans', maxWidth: '100%', margin: '0 auto' }}>
+    <MainNewsTitle text="Exemplo de texto" whiteText={false} {...args} />
   </div>
 );

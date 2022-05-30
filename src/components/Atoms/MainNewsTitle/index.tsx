@@ -3,11 +3,11 @@ import { Container } from './styles';
 
 interface IMainNewsTitle {
   text: string;
-  haveImg?: boolean;
+  whiteText?: boolean;
 }
 
-const MainNewsTitle: React.FC<IMainNewsTitle> = ({ text }) => {
-  return <Container>{text}</Container>;
+const MainNewsTitle: React.FC<IMainNewsTitle> = ({ text, whiteText }) => {
+  return <Container whiteText={whiteText}>{text}</Container>;
 };
 
 export default MainNewsTitle;

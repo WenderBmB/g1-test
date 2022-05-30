@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
-import Description from '.';
+import LoadMore from '.';
 
 export default {
-  title: 'Atoms/Description',
-  component: Description,
+  title: 'Atoms/LoadMore',
+  component: LoadMore,
 } as Meta;
 
 export const Default: Story = (args) => (
   <div style={{ maxWidth: '100%', margin: '0 auto' }}>
-    <Description text="Exemplo de descrição" {...args} />
+    <LoadMore onClick={() => alert('clicou aqui')} />
   </div>
 );
