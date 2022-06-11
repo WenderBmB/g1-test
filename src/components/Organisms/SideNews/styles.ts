@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { sizeScreen } from '../../../utils/NormalizedStyles';
 
 export const Container = styled.div`
   width: 100%;
@@ -6,10 +7,15 @@ export const Container = styled.div`
   flex-direction: column;
   cursor: pointer;
   border-bottom: 1px solid #c8c8c8;
+
+  @media screen and (min-width: ${sizeScreen.md}) {
+    flex-direction: row;
+  }
 `;
 
 export const CardLeftContent = styled.div`
-  width: 100%;
+  width: 270px;
+  height: 152px;
   & > div {
     display: flex;
     flex-direction: row;
@@ -26,13 +32,13 @@ export const CardLeftContent = styled.div`
 `;
 
 export const CardRightContent = styled.div`
-  width: 100%;
+  width: calc(270-100%);
   padding: 0 20px;
 `;
 
 export const Thumb = styled.img`
   width: 100%;
-  height: 95%;
+  height: 100%;
   object-fit: cover;
 `;
 
