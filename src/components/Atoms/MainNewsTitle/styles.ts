@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { size } from '../../Organisms/MainNews/styles';
+import { sizeScreen } from '../../../utils/NormalizedStyles';
 
 interface ContainerProps {
   whiteText?: boolean;
@@ -20,7 +20,7 @@ export const Container = styled.h1<ContainerProps>`
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
     `}
 
-  @media screen and (min-width: ${size.sm}) {
+  @media screen and (min-width: ${sizeScreen.sm}) {
     letter-spacing: -2.5px;
     font-size: 40px;
     line-height: 44px;

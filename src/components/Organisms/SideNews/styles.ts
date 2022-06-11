@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   cursor: pointer;
   border-bottom: 1px solid #c8c8c8;
 `;
 
 export const CardLeftContent = styled.div`
-  width: 40%;
+  width: 100%;
   & > div {
     display: flex;
     flex-direction: row;
@@ -25,7 +26,7 @@ export const CardLeftContent = styled.div`
 `;
 
 export const CardRightContent = styled.div`
-  width: 60%;
+  width: 100%;
   padding: 0 20px;
 `;
 

@@ -1,7 +1,6 @@
 import React from 'react';
-import { formatDistance, format } from 'date-fns';
+import { formatDistance } from 'date-fns';
 import ptBR from 'date-fns/esm/locale/pt-BR/index.js';
-import { zonedTimeToUtc } from 'date-fns-tz';
 import { Container } from './styles';
 
 interface ITimeAgoFontNews {

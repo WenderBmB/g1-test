@@ -1,17 +1,10 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
+import { sizeScreen } from '../../../utils/NormalizedStyles';
 
 interface ContainerProps {
   hasImg: boolean;
   img?: string;
 }
-
-export const size = {
-  sm: '576px',
-  md: '768px',
-  lg: '992px',
-  xl: '1200px',
-  xxl: '1400px',
-};
 
 export const Container = styled.div<ContainerProps>`
   /* width: 464px; */
@@ -24,12 +17,12 @@ export const Container = styled.div<ContainerProps>`
   flex-direction: column;
   justify-content: end;
 
-  @media screen and (min-width: ${size.md}) {
+  @media screen and (min-width: ${sizeScreen.md}) {
     width: 45%;
     height: 276px;
   }
 
-  @media screen and (min-width: ${size.lg}) {
+  @media screen and (min-width: ${sizeScreen.lg}) {
     width: 45%;
     height: 426px;
   }

@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { size } from '../../Organisms/MainNews/styles';
+import styled from 'styled-components';
+import { sizeScreen } from '../../../utils/NormalizedStyles';
 
 export const Container = styled.h3`
   font-family: 'Open Sans';
@@ -8,12 +8,9 @@ export const Container = styled.h3`
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.72px;
-  /* font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -1.245px; */
   color: #c4170c;
 
-  @media screen and (min-width: ${size.sm}) {
+  @media screen and (min-width: ${sizeScreen.sm}) {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.245px;

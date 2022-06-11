@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlayButton: React.FC = () => {
+const PlayButtonIcon: React.FC = () => {
   return (
     <svg
       width="48"
@@ -18,4 +18,4 @@ const PlayButton: React.FC = () => {
   );
 };
 
-export default PlayButton;
+export default PlayButtonIcon;

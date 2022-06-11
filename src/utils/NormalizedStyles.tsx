@@ -32,3 +32,11 @@ export default createGlobalStyle`
          border-radius: 5px;
      }
 `;
+
+export const sizeScreen = {
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1400px',
+};

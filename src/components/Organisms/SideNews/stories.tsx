@@ -10,7 +10,7 @@ export default {
 export const Default: Story = (args) => {
   const mockedData = newsDefaultMock;
   return (
-    <div style={{ maxWidth: '70%' }}>
+    <div style={{ maxWidth: '100%' }}>
       <SideNews
         id={mockedData.id}
         image={mockedData.image}
@@ -32,7 +32,7 @@ export const Default: Story = (args) => {
 export const NewsWithGroup: Story = (args) => {
   const mockedData = newsWithGroupMock;
   return (
-    <div style={{ maxWidth: '70%' }}>
+    <div style={{ maxWidth: '100%' }}>
       <SideNews
         id={mockedData.id}
         image={mockedData.image}
@@ -54,7 +54,7 @@ export const NewsWithGroup: Story = (args) => {
 export const NewsWithVideo: Story = (args) => {
   const mockedData = newsWithVideoMock;
   return (
-    <div style={{ maxWidth: '70%' }}>
+    <div style={{ maxWidth: '100%' }}>
       <SideNews
         id={mockedData.id}
         image={mockedData.image}
