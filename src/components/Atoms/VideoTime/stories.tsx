@@ -8,6 +8,6 @@ export default {
 
 export const Default: Story = (args) => (
   <div style={{ backgroundColor: '#000', maxWidth: '50px', margin: '0 auto' }}>
-    <VideoTime />
+    <VideoTime duration={38499} {...args} />
   </div>
 );

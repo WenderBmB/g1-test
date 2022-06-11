@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
-import Description from '.';
+import SideNewsTitle from '.';
 
 export default {
-  title: 'Atoms/Description',
-  component: Description,
+  title: 'Atoms/SideNewsTitle',
+  component: SideNewsTitle,
 } as Meta;
 
 export const Default: Story = (args) => (
   <div style={{ maxWidth: '100%', margin: '0 auto' }}>
-    <Description text="Exemplo de descrição" {...args} />
+    <SideNewsTitle text="Exemplo de texto" {...args} />
   </div>
 );

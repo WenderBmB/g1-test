@@ -8,6 +8,8 @@ export const Container = styled.button`
   font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5px;
   border: 0;
   border-radius: 5px;
 `;

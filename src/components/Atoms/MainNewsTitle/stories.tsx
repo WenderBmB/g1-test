@@ -6,8 +6,8 @@ export default {
   component: MainNewsTitle,
 } as Meta;
 
-export const WithoutImage: Story = (args) => (
-  <div style={{ maxWidth: '100%', margin: '0 auto' }}>
-    <MainNewsTitle />
+export const Default: Story = (args) => (
+  <div style={{ fontFamily: 'Open Sans', maxWidth: '100%', margin: '0 auto' }}>
+    <MainNewsTitle text="Exemplo de texto" whiteText={false} {...args} />
   </div>
 );

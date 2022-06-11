@@ -8,6 +8,6 @@ export default {
 
 export const Default: Story = (args) => (
   <div style={{ maxWidth: '100%', margin: '0 auto' }}>
-    <Label />
+    <Label text="Exemplo de texto" {...args} />
   </div>
 );

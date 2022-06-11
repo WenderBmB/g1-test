@@ -1,23 +1,21 @@
 import React from 'react';
-import { Container } from './styles';
 
-const PlayButton: React.FC = () => {
+const PlayButtonIcon: React.FC = () => {
   return (
-    <Container>
-      <svg
-        width="35"
-        height="35"
-        viewBox="0 0 35 35"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11.6667 7.29169V27.7084L27.7083 17.5L11.6667 7.29169Z"
-          fill="#A30F06"
-        />
-      </svg>
-    </Container>
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="24" cy="24" r="24" fill="white" />
+      <path
+        d="M18.6667 14.2917V34.7084L34.7083 24.5L18.6667 14.2917Z"
+        fill="#A30F06"
+      />
+    </svg>
   );
 };
 
-export default PlayButton;
+export default PlayButtonIcon;

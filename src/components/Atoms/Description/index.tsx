@@ -1,8 +1,13 @@
 import React from 'react';
 import { Container } from './styles';
 
-const Description: React.FC = () => {
-  return <Container>Descrição da Notícia</Container>;
+interface IDescription {
+  text: string;
+  whiteText?: boolean;
+}
+
+const Description: React.FC<IDescription> = ({ text, whiteText }) => {
+  return <Container whiteText={whiteText}>{text}</Container>;
 };
 
 export default Description;
