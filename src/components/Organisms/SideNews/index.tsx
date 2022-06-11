@@ -109,19 +109,3 @@ const SideNews: React.FC<ISideNews> = ({
 };
 
 export default SideNews;
-
-// return (
-//   <Container>
-//     <div>
-//       <PlayButton />
-//       <VideoTime duration={video} />
-//     </div>
-//     <div>
-//       <LiveBox />
-//       <SideNewsTitle text={titleText} />
-//       <div>
-//         <TimeAgoFontNews duration={timeAgoFontNewsText} />
-//       </div>
-//     </div>
-//   </Container>
-// );
