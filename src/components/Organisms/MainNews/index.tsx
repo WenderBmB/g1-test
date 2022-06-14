@@ -4,7 +4,7 @@ import Label from '../../Atoms/Label';
 import MainNewsTitle from '../../Atoms/MainNewsTitle';
 import { Container } from './styles';
 
-interface IMainNews {
+export interface IMainNews {
   labelText?: string;
   titleText: string;
   descriptionText?: string;
