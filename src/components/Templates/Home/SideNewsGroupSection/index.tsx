@@ -8,7 +8,7 @@ interface ISideNewsGroupSection {
   sideNews: ISideNews[];
 }
 
-const MainNewsGroupSection: React.FC<ISideNewsGroupSection> = ({
+const SideNewsGroupSection: React.FC<ISideNewsGroupSection> = ({
   sideNews,
 }) => {
   console.log('Side News Identification', sideNews);
@@ -22,4 +22,4 @@ const MainNewsGroupSection: React.FC<ISideNewsGroupSection> = ({
   );
 };
 
-export default MainNewsGroupSection;
+export default SideNewsGroupSection;
