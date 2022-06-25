@@ -7,7 +7,7 @@ export interface IVideo {
 }
 
 export interface ISideNews {
-  chapel?: string;
+  chapeu?: string;
   image: string;
   section?: string;
   summary?: string;

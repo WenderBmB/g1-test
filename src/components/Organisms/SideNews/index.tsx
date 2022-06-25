@@ -25,7 +25,7 @@ const SideNews: React.FC<ISideNews> = ({
   title,
   type,
   url,
-  chapel,
+  chapeu,
   children,
   group,
   section,
@@ -45,7 +45,7 @@ const SideNews: React.FC<ISideNews> = ({
           <Thumb src={image} alt={title} />
         </CardLeftContent>
         <CardRightContent>
-          {chapel && <Label text={chapel} />}
+          {chapeu && <Label text={chapeu} />}
           <SideNewsTitle text={title} />
           <GroupList group={group} />
           <div>
@@ -67,7 +67,7 @@ const SideNews: React.FC<ISideNews> = ({
             </div>
           </CardLeftContent>
           <CardRightContent>
-            {chapel && <Label text={chapel} />}
+            {chapeu && <Label text={chapeu} />}
             <SideNewsTitle text={title} />
             {summary && <Description text={summary} />}
             <div>
@@ -97,7 +97,7 @@ const SideNews: React.FC<ISideNews> = ({
         <Thumb src={image} alt={title} />
       </CardLeftContent>
       <CardRightContent>
-        {chapel && <Label text={chapel} />}
+        {chapeu && <Label text={chapeu} />}
         <SideNewsTitle text={title} />
         {summary && <Description text={summary} />}
         <div>

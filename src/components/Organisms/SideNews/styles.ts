@@ -14,8 +14,7 @@ export const Container = styled.div`
 `;
 
 export const CardLeftContent = styled.div`
-  width: 270px;
-  height: 152px;
+  width: 100%;
   & > div {
     display: flex;
     flex-direction: row;
@@ -29,11 +28,19 @@ export const CardLeftContent = styled.div`
       margin-left: 5px;
     }
   }
+  @media screen and (min-width: ${sizeScreen.md}) {
+    width: 270px;
+    height: 152px;
+  }
 `;
 
 export const CardRightContent = styled.div`
-  width: calc(270-100%);
+  width: 100%;
   padding: 0 20px;
+
+  @media screen and (min-width: ${sizeScreen.md}) {
+    width: calc(270-100%);
+  }
 `;
 
 export const Thumb = styled.img`
