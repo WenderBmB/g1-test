@@ -3,21 +3,11 @@ import Description from '../../Atoms/Description';
 import { IGroup } from '../../Atoms/ItemList';
 import Label from '../../Atoms/Label';
 import MainNewsTitle from '../../Atoms/MainNewsTitle';
+import { INews } from '../../Templates/Home';
 import { IVideo } from '../SideNews/types';
 import { Container } from './styles';
 
-export interface IMainNews {
-  chapeu?: string;
-  image: string;
-  section?: string;
-  summary?: string;
-  title: string;
-  url: string;
-  video?: IVideo | null;
-  group?: IGroup[];
-  type: string;
-  created: string;
-  id: string;
+export interface IMainNews extends INews {
   rightNews?: boolean;
 }
 
@@ -37,7 +27,7 @@ const MainNews: React.FC<IMainNews> = ({
   rightNews,
 }) => {
   return (
-    <Container img={image} hasImg={!!image}>
+    <Container img={image}>
       {chapeu && <Label whiteText={rightNews} text={chapeu} />}
       <div>
         <MainNewsTitle text={title} whiteText={rightNews} />

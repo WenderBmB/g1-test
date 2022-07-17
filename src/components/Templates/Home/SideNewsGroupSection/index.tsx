@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SideNews from '../../../Organisms/SideNews';
 import { ISideNews } from '../../../Organisms/SideNews/types';
 
@@ -12,12 +12,10 @@ const SideNewsGroupSection: React.FC<ISideNewsGroupSection> = ({
   sideNews,
 }) => {
   console.log('Side News Identification', sideNews);
+
   return (
     <Container>
       <SideNews {...sideNews[0]} />
-      <SideNews {...sideNews[1]} />
-      <SideNews {...sideNews[2]} />
-      <SideNews {...sideNews[3]} />
     </Container>
   );
 };

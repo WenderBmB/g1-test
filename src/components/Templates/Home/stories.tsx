@@ -9,7 +9,7 @@ export default {
 export const Home: Story = (args) => (
   <div style={{ maxWidth: '100%', margin: '0 auto' }}>
     <HomeTemplate
-      mainNews={[
+      news={[
         {
           chapeu: 'Blog do Mauro Ferreira',
           image:
@@ -47,8 +47,6 @@ export const Home: Story = (args) => (
           created: '2020-04-13T14:32:20.174Z',
           id: '1e307a4b-3186-4dfc-a268-ffaee374411a',
         },
-      ]}
-      sideNews={[
         {
           chapeu: 'Receitas',
           image:
@@ -122,6 +120,68 @@ export const Home: Story = (args) => (
           type: 'materia',
           created: '2020-03-24T22:42:45.224Z',
           id: 'ed4cfc6de1b1294379fe25abd2ffe4d0',
+        },
+        {
+          chapeu: '',
+          image:
+            'https://s2.glbimg.com/mJQ9CuDWpjUJBIrOJyXEmpBqf0Q=/0x0:1700x916/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/Y/s/Mr56JdSLCpqA9pIpBEIQ/tiranossauro.jpg',
+          section: 'Planeta Bizarro',
+          summary:
+            'Ela afirmou que noiva e convidados encararam bem a brincadeira.',
+          title:
+            'Madrinha aparece no casamento da irmã fantasiada de tiranossauro nos EUA',
+          url: 'https://g1.globo.com/planeta-bizarro/noticia/2019/09/04/madrinha-aparece-no-casamento-da-irma-fantasiada-de-tiranossauro-nos-eua.ghtml',
+          video: null,
+          group: [],
+          type: 'materia',
+          created: '2019-09-04T13:30:20.335Z',
+          id: '5b7618101c8a7beb496dae105c7aada9',
+        },
+        {
+          chapeu: '',
+          image:
+            'https://s2.glbimg.com/ZyHt-u-xOPnXSGKQ1fQRPdw_ceY=/0x0:1700x2267/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/o/u/ESwgMPSfANq2T100KYlA/policial.jpg',
+          section: 'Planeta Bizarro',
+          summary:
+            'Família chamou polícia da Flórida por suspeitar de tentativa de roubo, mas era apenas um felino perdido.',
+          title: "Gato é 'preso' suspeito de furto nos EUA",
+          url: 'https://g1.globo.com/planeta-bizarro/noticia/2019/09/04/gato-e-preso-suspeito-de-furto-nos-eua.ghtml',
+          video: null,
+          group: [],
+          type: 'materia',
+          created: '2019-09-04T10:25:40.420Z',
+          id: '6db667a01d6a113959b03ed93c518d50',
+        },
+        {
+          chapeu: '',
+          image:
+            'https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/o/u/ESwgMPSfANq2T100KYlA/policial.jpg',
+          section: 'Planeta Bizarro',
+          summary:
+            'Função de Bob era coibir excesso de velocidade, mas ele acabou removido de rua.',
+          title: 'Policial de trânsito de cartolina é furtado na Escócia',
+          url: 'https://g1.globo.com/planeta-bizarro/noticia/2019/09/02/policial-de-transito-de-cartolina-e-furtado-na-escocia.ghtml',
+          video: null,
+          group: [],
+          type: 'materia',
+          created: '2019-09-02T16:28:33.172Z',
+          id: 'ed7b0aabeb2164ee24e4ab389ed4c058',
+        },
+        {
+          chapeu: '',
+          image:
+            'https://s.glbimg.com/jo/g1/f/original/2013/03/23/1-holanda.jpg',
+          section: 'Planeta Bizarro',
+          summary:
+            'Ele comprou passagem errada e acabou na Holanda, sem dinheiro e sem saber falar as línguas locais.',
+          title:
+            'Eslovaco que ia visitar a mãe em Rotherham, na Inglaterra, vai parar em Roterdã, na Holanda',
+          url: 'https://g1.globo.com/planeta-bizarro/noticia/2019/08/29/eslovaco-que-ia-visitar-a-mae-em-rotherham-na-inglaterra-vai-parar-em-roterda-na-holanda.ghtml',
+          video: null,
+          group: [],
+          type: 'materia',
+          created: '2019-08-29T11:37:32.845Z',
+          id: '4d3b1c489f1c8489e61a42c2d09cc126',
         },
       ]}
     />
