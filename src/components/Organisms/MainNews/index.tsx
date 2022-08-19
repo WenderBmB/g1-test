@@ -1,32 +1,37 @@
 import React from 'react';
 import Description from '../../Atoms/Description';
+import { IGroup } from '../../Atoms/ItemList';
 import Label from '../../Atoms/Label';
 import MainNewsTitle from '../../Atoms/MainNewsTitle';
+import { INews } from '../../Templates/Home';
+import { IVideo } from '../SideNews/types';
 import { Container } from './styles';
 
-interface IMainNews {
-  labelText?: string;
-  titleText: string;
-  descriptionText?: string;
-  imgUrl?: string;
+export interface IMainNews extends INews {
   rightNews?: boolean;
 }
 
 const MainNews: React.FC<IMainNews> = ({
-  labelText,
-  titleText,
-  descriptionText,
-  imgUrl,
+  created,
+  id,
+  image,
+  title,
+  type,
+  url,
+  chapeu,
+  children,
+  group,
+  section,
+  summary,
+  video,
   rightNews,
 }) => {
   return (
-    <Container img={imgUrl} hasImg={!!imgUrl}>
-      {labelText && <Label whiteText={rightNews} text={labelText} />}
+    <Container img={image}>
+      {chapeu && <Label whiteText={rightNews} text={chapeu} />}
       <div>
-        <MainNewsTitle text={titleText} whiteText={rightNews} />
-        {descriptionText && (
-          <Description whiteText={rightNews} text={descriptionText} />
-        )}
+        <MainNewsTitle text={title} whiteText={rightNews} />
+        {summary && <Description whiteText={rightNews} text={summary} />}
       </div>
     </Container>
   );

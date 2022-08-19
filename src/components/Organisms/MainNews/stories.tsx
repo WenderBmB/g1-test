@@ -9,9 +9,14 @@ export default {
 export const Default: Story = (args) => (
   <div style={{ maxWidth: '100%', margin: '0 auto' }}>
     <MainNews
-      labelText="Exemplo de label"
-      titleText="Exemplo de título"
-      descriptionText="Exemplo de decrição"
+      chapeu="Exemplo de label"
+      title="Exemplo de título"
+      summary="Exemplo de decrição"
+      created=""
+      id=""
+      image=""
+      type=""
+      url=""
       {...args}
     />
   </div>
@@ -19,6 +24,14 @@ export const Default: Story = (args) => (
 
 export const WithoutLabelAndDescription: Story = (args) => (
   <div style={{ maxWidth: '100%', margin: '0 auto' }}>
-    <MainNews titleText="Exemplo de título" {...args} />
+    <MainNews
+      created=""
+      id=""
+      image=""
+      type=""
+      url=""
+      title="Exemplo de título"
+      {...args}
+    />
   </div>
 );

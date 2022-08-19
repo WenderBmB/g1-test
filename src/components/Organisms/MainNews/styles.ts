@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { sizeScreen } from '../../../utils/NormalizedStyles';
 
 interface ContainerProps {
-  hasImg: boolean;
   img?: string;
 }
 
@@ -16,6 +15,8 @@ export const Container = styled.div<ContainerProps>`
   display: flex;
   flex-direction: column;
   justify-content: end;
+  background: url(${(props) => props.img}) no-repeat;
+  background-size: 100% 100%;
 
   @media screen and (min-width: ${sizeScreen.md}) {
     width: 45%;

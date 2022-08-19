@@ -18,7 +18,7 @@ export const Default: Story = (args) => {
         title={mockedData.title}
         url={mockedData.url}
         created={mockedData.created}
-        chapel={mockedData.chapel}
+        chapeu={mockedData.chapeu}
         group={mockedData.group}
         section={mockedData.section}
         summary={mockedData.summary}
@@ -40,7 +40,7 @@ export const NewsWithGroup: Story = (args) => {
         title={mockedData.title}
         url={mockedData.url}
         created={mockedData.created}
-        chapel={mockedData.chapel}
+        chapeu={mockedData.chapeu}
         group={mockedData.group}
         section={mockedData.section}
         summary={mockedData.summary}
@@ -62,7 +62,7 @@ export const NewsWithVideo: Story = (args) => {
         title={mockedData.title}
         url={mockedData.url}
         created={mockedData.created}
-        chapel={mockedData.chapel}
+        chapeu={mockedData.chapeu}
         group={mockedData.group}
         section={mockedData.section}
         summary={mockedData.summary}

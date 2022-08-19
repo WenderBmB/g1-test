@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { size } from '../MainNews/styles';
+import { sizeScreen } from '../../../../utils/NormalizedStyles';
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media screen and (min-width: ${size.md}) {
+  @media screen and (min-width: ${sizeScreen.md}) {
     flex-direction: row;
   }
 `;
